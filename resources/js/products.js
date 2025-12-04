@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import ReactDOM from "react-dom";
 
 function ProductInventory() {
     const [products, setProducts] = useState([]);
@@ -364,7 +363,3 @@ function ProductInventory() {
 }
 
 export default ProductInventory;
-
-if (document.getElementById("samantha")) {
-    ReactDOM.render(<ProductInventory />, document.getElementById("samantha"));
-}

@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Products from "./products";
 
@@ -14,3 +15,7 @@ function AppRouter() {
 }
 
 export default AppRouter;
+
+if (document.getElementById("samantha")) {
+    ReactDOM.render(<AppRouter />, document.getElementById("samantha"));
+}
